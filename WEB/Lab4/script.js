@@ -30,7 +30,11 @@ function imgDelete() {
     console.log("Deleting...")
     const container = document.querySelector(".img-container");
     container.removeChild(container.lastChild);
-    if(container.childElementCount == 0) document.querySelector("button:first-child").setAttribute("disabled", "true");
+    if(container.childElementCount == 0) {
+        document.querySelector("button:first-child").setAttribute("disabled", "true");
+        document.querySelector("button:nth-child(2)").setAttribute("disabled", "true");
+        document.querySelector("button:nth-child(3)").setAttribute("disabled", "true");
+    }
 }
 
 function imgAdd() {
@@ -44,6 +48,8 @@ function imgAdd() {
     link.appendChild(image);
     container.appendChild(link);
     document.querySelector("button:first-child").removeAttribute("disabled");
+    document.querySelector("button:nth-child(2)").removeAttribute("disabled");
+    document.querySelector("button:nth-child(3)").removeAttribute("disabled");
 }
 
 function sizeUp() {
