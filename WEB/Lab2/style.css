@@ -1,17 +1,18 @@
 /* Table styles*/
 table {
-    margin-top: 20px;
+    margin: 20px, auto;
     border: 1px solid black;
-    background: #000;
+    width: 50%;
 }
 td {
     border: 1px solid black;
-    min-width: 200px;
     text-align: center;
+    min-width: 100px;
     font-size: 30px;
 }
 tr {
     background: #fff;
+    height: 50px;
 }
 .first-row {
     background-color: #068f8f;
